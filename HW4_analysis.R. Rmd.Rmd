@@ -1,0 +1,76 @@
+---
+title: "A3: Incarceration"
+output: html_document
+---
+```{r}
+small_prison_jail_data_wa <- "https://raw.githubusercontent.com/melaniewalsh/Neat-Datasets/main/us-prison-jail-rates-1990-WA.csv"
+small_prison_WA <- read.csv(small_prison_jail_data_wa)
+
+```
+
+
+
+### Introduction
+
+The data analyzes the prison population in WA state based on county and year. The data delves into other categories such as gender and race population rates. For this assignment, I am choosing to analyze the population rate of black prisoners based on county. Doing so will allow me to understand the geographical representation in incarceration rates and policies, and will provide insights on the patterns of incarceration to assess criminal injustice/ justice based on race.
+
+
+### Summary Information
+
+-There is a substantial presence of Black people in the prison system, as seen by the average black jail population rate throughout all counties, which is around 1868.63.
+
+-Pend Oreille County, where the rate reaches its maximum, has the greatest percentage of black inmates. This raises the possibility of differences in the county's imprisonment rates.
+
+-It's interesting to note that several counties had black jail population rates of 0, which suggests that there were no Black inmates in these counties throughout the observation period.
+
+-The year with the greatest percentage of black inmates is 1998, indicating a particular period of time when the rate was noticeably higher than in other years.
+
+-Approximately 1062.805 black people are incarcerated on a median basis across all counties. This median offers perception into the central tendency of black incarceration rates, showing the typical level of representation across counties.
+
+### The Dataset
+
+Who collected the data?  
+-The data was collected by the Vera Institute.
+
+How was the data collected or generated?  
+-The data was collected across all counties in WA state from the year 1990 to the year 2018. The institute generated the prison population and population rates by race and counties as well.
+
+Why was the data collected?
+-The data was collected to analyze prison population rates based on race and region in WA state. This could be further analyzed to discuss topics such as racial disparities among incarcerated people, and in the criminal justice system. 
+
+How many observations (rows) are in your data?  
+-There are 1131 observations in this data.
+
+How many features (columns) are in the data?  
+-There are 23 features in this data.
+
+What, if any, ethical questions or questions of power do you need to consider when working with this data?  
+-Stigmatization and Bias: Researching imprisonment statistics according to race may unintentionally promote prejudices and biases. It is ethically responsible to communicate research in a way that does not support false stereotypes or biased narratives.
+
+Data integrity: Ensuring the data's dependability and correctness is crucial. Data that is inaccurate or misinterpreted might result in incorrect interpretations and can potentially perpetuate misinformation.
+
+What are possible limitations or problems with this data?   (at least 200 words)
+-When evaluating the results, it is important to take into account the dataset's possible limits and issues, which are mostly related to the rates of black people who are jailed in Washington State.
+
+The statistics may also contain biased reporting and insufficient information. It's possible that not all arrests or convictions are correctly documented, which results in an underrepresentation of the true jail population. As a result, the discrepancies already present may be exacerbated, especially in underprivileged populations.
+
+There is also no contextual information in the dataset on the events leading up to incarceration. Socioeconomic position, access to legal counsel, and institutional biases may have a significant impact on arrest and conviction rates, but the data may not reflect this, possibly resulting in simplistic conclusions that disregard those complexities.
+
+The dataset does not take into account alterations in social views, criminal justice system reforms, or changes in policing practices that could have an influence on imprisonment rates. Failure to take this into account might lead to incorrect judgments regarding the success of treatments or how racial inequalities have changed over time.
+
+Lastly, geographical and historical grouping problems could obscure regional variances in imprisonment rates or changes in trends. Important discrepancies within counties or urban-rural differences may be hidden by county-level data.
+
+### Trends Over Time Chart
+
+This data shows the trend of the Black jail population rate in five of the largest counties in WA state. The graph gives a localized view on trends in Black jail population rates by concentrating on the biggest counties in Washington state. Understanding how certain state areas affect the overall trend and discrepancies depends on a county-level analysis, helping to also identify regional disparities. This graph depicts Spokane as the county with the highest average black population rate, with a significant spike seen just after the year 1990. The other counties remained fairly consistent with their rates - with the rates seemingly decreasing after the year 2000 for those counties.
+
+
+### Variable Comparison Chart
+
+I included this chart to help visualize black vs. white jail population rates by year. This chart indicates that in between the year 1995 and 2000, black people experienced the highest jail population rate across the span of the 28 years. Generally, the white jail population rates remained almost constant significantly low compared to the black population. The significant difference between the two races highlights the disparities between the two groups, and could be a marker to indicate specific events and shifts in law enforcement practices that might have led to the higher incarceration rates for black people during that time.
+
+### Map
+
+I included this map to represent a visual aid of Black population rates in jail across all counties in WA. Though I could not load my data correctly due to discrepancies between my shapefile and my csv dataset, this map would ultimately help to identify which counties have higher and lower incarceration rates amongst the black population in the state of WA.
+
+
